@@ -1,4 +1,4 @@
-script.js
+
 function entrar(e){
     e.preventDefault();
     window.location = "objetos.html";
