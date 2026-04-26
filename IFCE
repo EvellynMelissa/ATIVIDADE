@@ -1,0 +1,29 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Área de Administração</header>
+
+<nav>
+    <a href="login.html">Login</a>
+</nav>
+
+<div class="container">
+    <h2>Login</h2>
+    <form onsubmit="entrar(event)">
+        <input type="text" placeholder="Usuário"><br>
+        <input type="password" placeholder="Senha"><br>
+        <button>Entrar</button>
+    </form>
+</div>
+
+<footer>Evellyn Melissa :)</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
