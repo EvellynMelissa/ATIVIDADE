@@ -1,0 +1,37 @@
+objetos.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Área de Administração</header>
+
+<nav>
+    <a href="objetos.html">Objetos</a>
+    <a href="usuarios.html">Usuários</a>
+    <a href="login.html">Sair</a>
+</nav>
+
+<div class="container">
+    <h2>Cadastro de Objeto</h2>
+
+    <input id="obj" placeholder="Nome">
+    <button onclick="add()">Salvar</button>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Ações</th>
+        </tr>
+        <tbody id="lista"></tbody>
+    </table>
+</div>
+
+<footer>Evellyn Melissa :)</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
