@@ -12,6 +12,8 @@ header {
     padding: 15px;
     font-size: 20px;
     font-weight: bold;
+    border-style: dotted;
+    border-width: 2px;
 }
 
 /* Menu */
