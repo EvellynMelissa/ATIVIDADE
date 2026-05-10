@@ -119,4 +119,30 @@ footer{
         margin: auto;
     }
 
+#menu{
+    display: none;
+}
+
+nav{
+    display: none;
+}
+
+#menu:checked + .abrir-menu + nav{
+    display: block;
+}
+
+.abrir-menu{
+    display: block;
+    background-color: var(--rosa);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fechar-menu{
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
 }
