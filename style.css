@@ -1,90 +1,122 @@
-body {
-    font-family: 'Arial', sans-serif;
+:root{
+    --rosa-claro: #fff0f5;
+    --rosa: #ffb6c1;
+    --rosa-forte: #ff69b4;
+    --rosa-escuro: #ff1493;
+    --branco: white;
+
+    --fonte: Arial, sans-serif;
+}
+
+body{
+    font-family: var(--fonte);
     margin: 0;
-    background-color: #fff0f5; 
+    background-color: var(--rosa-claro);
 }
 
-/* Cabeçalho */
-header {
-    background-color: #ffb6c1; 
-    color: white;
+
+header{
+    background-color: var(--rosa);
+    color: var(--branco);
+
     text-align: center;
+
     padding: 15px;
+
     font-size: 20px;
-    font-weight: bold;
-    border-style: dotted;
-    border-width: 2px;
+
+    border: 2px dotted white;
 }
 
-/* Menu */
-nav {
-    background-color: #ffc0cb;
+nav{
+    background-color: var(--rosa);
     padding: 10px;
     text-align: center;
 }
 
-nav a {
+nav a{
     color: white;
-    margin: 0 10px;
     text-decoration: none;
+    margin: 10px;
     font-weight: bold;
 }
 
-/* Container */
-.container {
+nav a:hover{
+    color: var(--rosa-escuro);
+}
+
+.container{
     padding: 20px;
 }
 
-/* Inputs */
-input {
+input{
     padding: 8px;
     margin: 5px;
-    border: 1px solid #ffb6c1;
+
+    border: 1px solid var(--rosa);
     border-radius: 10px;
-    outline: none;
-}
 
-/* Botões */
-button {
-    background-color: #ff69b4;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #ff1493;
-}
-
-/* Tabela */
-table {
     width: 100%;
-    margin-top: 15px;
-    border-collapse: collapse;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
-th {
-    background-color: #ffb6c1;
+button{
+    background-color: var(--rosa-forte);
+    color: white;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--rosa-escuro);
+}
+
+
+table{
+    width: 100%;
+
+    margin-top: 15px;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+th{
+    background-color: var(--rosa);
     color: white;
 }
 
-td, th {
+td, th{
     border: 1px solid #ffd6e0;
     padding: 10px;
     text-align: center;
 }
 
-/* Rodapé */
-footer {
-    background-color: #ffb6c1;
+
+footer{
+    background-color: var(--rosa);
+
     color: white;
+
     text-align: center;
+
     padding: 10px;
+
     margin-top: 20px;
+}
+
+
+@media (min-width: 768px){
+
+    .container{
+        width: 70%;
+        margin: auto;
+    }
+
 }
