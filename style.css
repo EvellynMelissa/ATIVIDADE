@@ -14,6 +14,7 @@ body{
     background-color: var(--rosa-claro);
 }
 
+/* Cabeçalho */
 
 header{
     background-color: var(--rosa);
@@ -27,6 +28,8 @@ header{
 
     border: 2px dotted white;
 }
+
+/* Menu */
 
 nav{
     background-color: var(--rosa);
@@ -45,9 +48,13 @@ nav a:hover{
     color: var(--rosa-escuro);
 }
 
+/* Conteúdo */
+
 .container{
     padding: 20px;
 }
+
+/* Inputs */
 
 input{
     padding: 8px;
@@ -58,6 +65,8 @@ input{
 
     width: 100%;
 }
+
+/* Botões */
 
 button{
     background-color: var(--rosa-forte);
@@ -76,6 +85,7 @@ button:hover{
     background-color: var(--rosa-escuro);
 }
 
+/* Tabela */
 
 table{
     width: 100%;
@@ -98,6 +108,7 @@ td, th{
     text-align: center;
 }
 
+/* Rodapé */
 
 footer{
     background-color: var(--rosa);
@@ -111,6 +122,7 @@ footer{
     margin-top: 20px;
 }
 
+/* Mobile First */
 
 @media (min-width: 768px){
 
@@ -118,6 +130,10 @@ footer{
         width: 70%;
         margin: auto;
     }
+
+}
+
+/* Menu abrir e fechar */
 
 #menu{
     display: none;
@@ -133,16 +149,24 @@ nav{
 
 .abrir-menu{
     display: block;
+
     background-color: var(--rosa);
+
     color: white;
+
     padding: 10px;
+
     text-align: center;
+
     cursor: pointer;
 }
 
 .fechar-menu{
     display: block;
+
     margin-bottom: 10px;
+
     cursor: pointer;
+
     color: white;
 }
