@@ -1,0 +1,197 @@
+:root{
+    --rosa-claro: #fff0f5;
+    --rosa: #ffb6c1;
+    --rosa-forte: #ff69b4;
+    --rosa-escuro: #ff1493;
+    --branco: white;
+
+    --fonte: Arial, sans-serif;
+}
+
+body{
+    font-family: var(--fonte);
+    margin: 0;
+    background-color: var(--rosa-claro);
+}
+
+/* Cabeçalho */
+
+header{
+    background-color: var(--rosa);
+    color: var(--branco);
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-size: 20px;
+
+    border: 2px dotted white;
+}
+
+/* Menu */
+
+nav{
+    background-color: var(--rosa);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: var(--rosa-escuro);
+}
+
+/* Conteúdo */
+
+.container{
+    padding: 20px;
+}
+
+/* Inputs */
+
+input{
+    padding: 8px;
+    margin: 5px;
+
+    border: 1px solid var(--rosa);
+    border-radius: 10px;
+
+    width: 100%;
+}
+
+/* Botões */
+
+button{
+    background-color: var(--rosa-forte);
+    color: white;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--rosa-escuro);
+}
+
+/* Tabela */
+
+table{
+    width: 100%;
+
+    margin-top: 15px;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+th{
+    background-color: var(--rosa);
+    color: white;
+}
+
+td, th{
+    border: 1px solid #ffd6e0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: var(--rosa);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 10px;
+
+    margin-top: 20px;
+}
+
+/* Mobile First */
+
+@media (min-width: 768px){
+
+    nav{
+        display: flex;
+        flex-direction: column;
+
+        position: fixed;
+
+        width: 200px;
+        height: 100vh;
+
+        left: 0;
+        top: 0;
+
+        padding-top: 30px;
+    }
+
+    nav a{
+        margin: 15px;
+    }
+
+    .abrir-menu,
+    .fechar-menu{
+        display: none;
+    }
+
+    .container,
+    header,
+    footer{
+        margin-left: 220px;
+    }
+
+}
+
+/* Menu abrir e fechar */
+
+#menu{
+    display: none;
+}
+
+nav{
+    display: none;
+}
+
+#menu:checked + .abrir-menu + nav{
+    display: block;
+}
+
+.abrir-menu{
+    display: block;
+
+    background-color: var(--rosa);
+
+    color: white;
+
+    padding: 10px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.fechar-menu{
+    display: block;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+
+    color: white;
+}
