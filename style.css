@@ -126,6 +126,17 @@ footer{
 
 @media (min-width: 768px){
 
+    nav{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .abrir-menu,
+    .fechar-menu{
+        display: none;
+    }
+
     .container{
         width: 70%;
         margin: auto;
